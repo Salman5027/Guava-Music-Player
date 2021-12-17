@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".player_Activity"
+    android:background="@drawable/back_main"
+    android:orientation="vertical"
+    android:weightSum="10"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtsn"
+            android:ellipsize="marquee"
+            android:layout_margin="20dp"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text="Song Name"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:textColor="#FFF"
+            >
+
+        </TextView>
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:id="@+id/imageView"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/music"
+
+
+            >
+
+        </ImageView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            >
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_centerInParent="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="40dp"
+                android:layout_margin="20dp"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                >
+
+            </SeekBar>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtStart"
+                android:layout_toLeftOf="@+id/seekBar"
+                android:layout_alignParentLeft="false"
+                android:layout_marginLeft="20dp"
+                android:text="0:10"
+                android:textColor="#FFF"
+                android:textSize="14sp"
+                android:layout_centerInParent="true"
+                >
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtStop"
+                android:layout_toRightOf="@+id/seekBar"
+                android:layout_alignParentRight="false"
+                android:layout_marginRight="20dp"
+                android:text="4:10"
+                android:textColor="#FFF"
+                android:textSize="14sp"
+                android:layout_centerInParent="true"
+                >
+
+            </TextView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
